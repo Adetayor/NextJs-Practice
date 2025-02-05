@@ -7,11 +7,11 @@ import Slide from './Slide';
 const Hero = () => {
   let settings = {
         dots: true,
-    infinte: true,
-    autoplay:true,
-    slidesToShow: 1,
-    slideToScroll: 1,
-    pauseOnHover: false,
+     infinte: true,
+     autoplay:true,
+     slidesToShow: 1,
+     slideToScroll: 1,
+     pauseOnHover: false,
   }
 
   const slideData = [
@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <div>
-        <div>
+        <div className='container pt-6 lg:pt-0'>
             <Slider {...settings}>
               {slideData.map((item)=> {
                 return (
