@@ -39,14 +39,14 @@ const productsData = [
     },
     {
       img:'/watch-1.jpg',
-      title: 'watches',
+      title: 'Watches',
       desc: "Smart Watches Vital Plus",
       rating: 4,
       price: "100.00",
     },
     {
-      img:'/jacket-2.jpg',
-      title: 'Jacket',
+      img:'/watch-2.jpg',
+      title: 'Watches',
       desc: "Pocket Watch Leather Pouch",
       rating: 4,
       price: "120.00",
@@ -56,10 +56,10 @@ const productsData = [
 const NewProducts = () => {
   return (
     <div>
-        <div>
-            <h2>NewProducts</h2>
+        <div className='container pt-16'>
+            <h2 className='font-medium text-2xl pb-4'>NewProducts</h2>
 
-            <div>
+            <div className='grid gridl-cols-1 place-items-center sm:place-items-start sm:grid-cols2 lg:grid-cols-3 xl:grid-cols-4 gap-10 xl:gap-x-20 xl:gap-y-10'>
                 {
                   productsData.map((item,index)=>{
                       return (

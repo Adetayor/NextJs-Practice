@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 
@@ -14,7 +15,7 @@ const Slide = ({ img, title, mainTitle, price }) => {
          </h3>
          <div className='bg-accent text-[14px] md:text-[16px] p-2 px-4 rounded-lg inline-block cursor-pointer hover:bg-blackish'>Shop Now</div>
       </div>
-      <image className='w-[100%] h-[30px] md:h-auto rounded-xl object-cover object-right md:object-left-bottom' src={img} alt='banner' width={2000} height={2000} />
+      <Image className='w-[100%] h-[30px] md:h-auto rounded-xl object-cover object-right md:object-left-bottom' src={img} alt='banner' width={2000} height={2000} />
   </div>
   );
 };
